@@ -4,7 +4,7 @@ import EnhancedSwitch, { IEnhancedSwitchProps } from './EnhancedSwitch'
 
 export type IRadioProps = IEnhancedSwitchProps
 
-class Radio extends React.Component<IRadioProps> {
+export class Radio extends React.Component<IRadioProps> {
 
     private readonly enhancedSwitchRef: React.RefObject<EnhancedSwitch>
 
@@ -41,5 +41,3 @@ class Radio extends React.Component<IRadioProps> {
         );
     }
 }
-
-export default Radio;

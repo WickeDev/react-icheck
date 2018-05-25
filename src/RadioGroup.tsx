@@ -1,5 +1,5 @@
 import * as React from 'react'
-import RadioButton, {IRadioProps} from './Radio'
+import {Radio, IRadioProps} from './Radio'
 
 export interface IRadioGroupProps {
   /**
@@ -44,7 +44,7 @@ export interface IRadioGroupState {
   value?: string
 }
 
-class RadioGroup extends React.Component<IRadioGroupProps, IRadioGroupState> {
+export class RadioGroup extends React.Component<IRadioGroupProps, IRadioGroupState> {
 
   constructor(props: IRadioGroupProps) {
     super(props)
@@ -129,7 +129,7 @@ class RadioGroup extends React.Component<IRadioGroupProps, IRadioGroupState> {
       // ref={option.props.value}
 
       return (
-        <RadioButton
+        <Radio
           {...other}
           name={name}
           value={value}
@@ -147,5 +147,3 @@ class RadioGroup extends React.Component<IRadioGroupProps, IRadioGroupState> {
     )
   }
 }
-
-export default RadioGroup

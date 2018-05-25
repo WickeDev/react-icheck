@@ -36,7 +36,7 @@ export interface IRadioGroupState {
     numberCheckedRadioButtons?: number;
     value?: string;
 }
-declare class RadioGroup extends React.Component<IRadioGroupProps, IRadioGroupState> {
+export declare class RadioGroup extends React.Component<IRadioGroupProps, IRadioGroupState> {
     constructor(props: IRadioGroupProps);
     componentWillMount(): void;
     componentWillReceiveProps(nextProps: IRadioGroupProps): void;
@@ -48,4 +48,3 @@ declare class RadioGroup extends React.Component<IRadioGroupProps, IRadioGroupSt
     private handleChange(e);
     render(): JSX.Element;
 }
-export default RadioGroup;

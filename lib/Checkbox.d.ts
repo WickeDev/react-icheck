@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { IEnhancedSwitchProps } from './EnhancedSwitch';
 export declare type ICheckboxProps = IEnhancedSwitchProps;
-declare class Checkbox extends React.Component<ICheckboxProps, {}> {
+export declare class Checkbox extends React.Component<ICheckboxProps, {}> {
     private readonly enhancedSwitchRef;
     constructor(props: ICheckboxProps);
     getValue(): string;
@@ -10,4 +10,3 @@ declare class Checkbox extends React.Component<ICheckboxProps, {}> {
     isChecked(): boolean;
     render(): JSX.Element;
 }
-export default Checkbox;

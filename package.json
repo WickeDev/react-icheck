@@ -2,9 +2,10 @@
   "name": "react-icheck",
   "version": "0.4.0",
   "description": "iCheck components built with React. Highly customizable checkboxes and radio buttons",
-  "main": "lib/index.js",
+  "main": "lib/index",
+  "types": "lib/index",
   "scripts": {
-    "build": "tsc --lib es6,dom --jsx react ./src/* -outDir lib",
+    "build": "tsc",
     "gh-pages": "gulp publish:examples",
     "lint": "eslint src examples/src",
     "prepublish": "npm run build",

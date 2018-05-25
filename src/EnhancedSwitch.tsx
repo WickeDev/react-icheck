@@ -368,7 +368,7 @@ class EnhancedSwitch extends React.Component<IEnhancedSwitchProps, IEnhancedSwit
       inheritID,
       aria,
       insert,
-
+      cursor,
       ...other
     } = props
 
@@ -429,9 +429,9 @@ class EnhancedSwitch extends React.Component<IEnhancedSwitchProps, IEnhancedSwit
       indeterminateClass = props.indeterminateCheckboxClass
     } else if (props.inputType === 'radio' && typeof props.indeterminateRadioClass !== 'undefined') {
       indeterminateClass = props.indeterminateRadioClass
-    } else {
+    } /*else {
       throw new Error('inputType is the necessary properties')
-    }
+    }*/
 
     const wrapProps: { className: string, id?: string, role?: string, 'aria-labelledby'?: string, 'aria-checked'?: boolean } = {
       className: classnames({
@@ -487,7 +487,7 @@ class EnhancedSwitch extends React.Component<IEnhancedSwitchProps, IEnhancedSwit
     )
 
     const insertElement = (props.insert && !React.isValidElement(props.insert)) ?
-      (<div dangerouslySetInnerHTML={{__html: props.insert}}></div>) : null
+      (<div dangerouslySetInnerHTML={{__html: props.insert}}/>) : null
 
     const inputContainer = (
       <div ref={this.inputContainerRef} {...wrapProps}>

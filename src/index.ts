@@ -1,9 +1,3 @@
-import Checkbox from './Checkbox';
-import Radio from './Radio';
-import RadioGroup from './RadioGroup';
-
-export default {
-  Checkbox,
-  Radio,
-  RadioGroup,
-};
+export {Checkbox, ICheckboxProps} from './Checkbox'
+export {Radio, IRadioProps} from './Radio'
+export {RadioGroup, IRadioGroupProps} from './RadioGroup'

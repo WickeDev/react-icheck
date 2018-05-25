@@ -3,7 +3,7 @@ import EnhancedSwitch, { IEnhancedSwitchProps } from './EnhancedSwitch'
 
 export type ICheckboxProps = IEnhancedSwitchProps
 
-class Checkbox extends React.Component<ICheckboxProps, {}> {
+export class Checkbox extends React.Component<ICheckboxProps, {}> {
 
     private readonly enhancedSwitchRef: React.RefObject<EnhancedSwitch>
 
@@ -35,5 +35,3 @@ class Checkbox extends React.Component<ICheckboxProps, {}> {
         )
     }
 }
-
-export default Checkbox
