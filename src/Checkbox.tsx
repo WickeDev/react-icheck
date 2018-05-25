@@ -5,7 +5,7 @@ export type ICheckboxProps = IEnhancedSwitchProps
 
 class Checkbox extends React.Component<ICheckboxProps, {}> {
 
-    private enhancedSwitchRef: React.RefObject<EnhancedSwitch>
+    private readonly enhancedSwitchRef: React.RefObject<EnhancedSwitch>
 
     constructor(props: ICheckboxProps) {
         super(props)

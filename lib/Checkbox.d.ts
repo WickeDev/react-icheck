@@ -3,7 +3,7 @@ import * as React from 'react';
 import { IEnhancedSwitchProps } from './EnhancedSwitch';
 export declare type ICheckboxProps = IEnhancedSwitchProps;
 declare class Checkbox extends React.Component<ICheckboxProps, {}> {
-    private enhancedSwitchRef;
+    private readonly enhancedSwitchRef;
     constructor(props: ICheckboxProps);
     getValue(): string;
     setChecked(newCheckedValue: boolean): void;

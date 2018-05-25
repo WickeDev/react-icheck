@@ -6,7 +6,7 @@ export type IRadioProps = IEnhancedSwitchProps
 
 class Radio extends React.Component<IRadioProps> {
 
-    private enhancedSwitchRef: React.RefObject<EnhancedSwitch>
+    private readonly enhancedSwitchRef: React.RefObject<EnhancedSwitch>
 
     constructor(props: IRadioProps) {
         super(props)

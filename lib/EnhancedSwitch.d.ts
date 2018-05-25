@@ -12,7 +12,7 @@ export interface IEnhancedSwitchProps {
     id?: string;
     className?: string;
     role?: string;
-    inputType: string;
+    inputType?: string;
     checked?: boolean;
     defaultChecked?: boolean;
     label?: string;
