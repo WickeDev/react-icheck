@@ -30,7 +30,7 @@ export interface IRadioGroupProps {
   /**
    * Should be used to pass `Radio` components.
    */
-  children?: JSX.Element
+  children?: JSX.Element[]
 
   /**
    * The css class name of the root element.
