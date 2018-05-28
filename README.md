@@ -8,7 +8,7 @@
 
 [iCheck](https://github.com/fronteed/icheck) components built with [React](http://facebook.github.io/react/). **No jQuery and Zepto** 
 
-Online demo: http://luqin.github.io/react-icheck
+Online demo: http://wickedev.github.io/react-icheck
 
 **Note: React-iCheck still in development**
 
@@ -90,7 +90,7 @@ import {Radio, RadioGroup} from 'react-icheck';
 </RadioGroup>
 ```
 
-More examples: [Online demo](http://luqin.github.io/react-icheck), [Source](https://github.com/luqin/react-icheck/tree/master/examples)
+More examples: [Online demo](http://wickedev.github.io/react-icheck), [Source](https://github.com/wickedev/react-icheck/tree/master/examples)
 
 ## Browser support
 
@@ -100,10 +100,8 @@ Mobile browsers (like Opera mini, Chrome mobile, Safari mobile, Android browser,
 
 ## Contribute
 
-Dev base on [react-component-tools](https://github.com/luqin/react-component-tools)
-
 ```sh
-$ git clone https://github.com/luqin/react-icheck.git
+$ git clone https://github.com/wickedev/react-icheck.git
 $ cd react-icheck
 $ npm install
 $ npm start # Run the docs site in development mode. This will watch for file changes as you work. And auto refresh the page to see the updates.
