@@ -32,7 +32,7 @@ Online demo: http://wickedev.github.io/react-icheck
 ## Usage
 
 ```sh
-npm install react-icheck icheck --save
+npm install github:react-icheck#v0.4.3 icheck --save
 ```
 
 ```js
