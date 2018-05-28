@@ -2,10 +2,6 @@ import * as React from 'react';
 import {Panel, Row, Col} from 'react-bootstrap';
 import {Checkbox, Radio, RadioGroup} from 'react-icheck';
 
-interface IDemoProps {
-    test: boolean
-}
-
 interface IDemoState {
     i1checked: boolean
     i3checked: boolean
@@ -14,13 +10,13 @@ interface IDemoState {
     radioValue: string
 }
 
-class Demo extends React.Component<IDemoProps, IDemoState> {
+class Demo extends React.Component<{}, IDemoState> {
 
     static propTypes = {};
 
     static defaultProps = {};
 
-    constructor(props: IDemoProps) {
+    constructor(props: {}) {
         super(props);
         this.state = {
             i1checked: false,

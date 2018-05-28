@@ -51,7 +51,7 @@ export interface IEnhancedSwitchProps {
     inheritClass?: boolean;
     inheritID?: boolean;
     aria?: boolean;
-    insert?: string;
+    insert?: string | JSX.Element;
     children?: JSX.Element;
     labelClassName?: string;
 }

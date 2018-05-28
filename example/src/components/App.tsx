@@ -13,11 +13,6 @@ import {
 import { LinkContainer } from 'react-router-bootstrap';
 
 class App extends React.Component {
-
-  static propTypes = {
-    children: React.PropTypes.node,
-  };
-
   render() {
     return (
       <div>
