@@ -68,7 +68,9 @@
     "exclude": [
         "node_modules",
         "example",
-        "lib",
-        "_examples"
+        "lib"
+    ],
+    "include": [
+        "src/**/*"
     ]
 }

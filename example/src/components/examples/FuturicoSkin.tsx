@@ -1,5 +1,6 @@
 import * as React from 'react';
-import {Panel, Row, Col} from 'react-bootstrap';
+import {Col, Panel, Row} from 'react-bootstrap';
+import * as PanelBody from "react-bootstrap/lib/PanelBody";
 import {Checkbox, Radio} from 'react-icheck';
 
 interface IFuturicoSkinProps {
@@ -16,12 +17,12 @@ class FuturicoSkin extends React.Component<IFuturicoSkinProps, IFuturicoSkinStat
     constructor(props: IFuturicoSkinProps) {
         super(props);
         this.state = {
-            skin: 'futurico',
             color: props.color,
+            skin: 'futurico',
         };
     }
 
-    getCheckboxClass() {
+    public getCheckboxClass(): string {
         const {skin, color} = this.state;
         if (color) {
             return `icheckbox_${skin}-${color}`;
@@ -29,7 +30,7 @@ class FuturicoSkin extends React.Component<IFuturicoSkinProps, IFuturicoSkinStat
         return `icheckbox_${skin}`;
     }
 
-    getRadioClass() {
+    public getRadioClass(): string {
         const {skin, color} = this.state;
         if (color) {
             return `iradio_${skin}-${color}`;
@@ -37,73 +38,74 @@ class FuturicoSkin extends React.Component<IFuturicoSkinProps, IFuturicoSkinStat
         return `iradio_${skin}`;
     }
 
-    render() {
+    public render() {
         return (
             <div className="skin skin-polaris">
                 <h3>Futurico skin</h3>
                 <Panel>
-                    <Row>
-                        <Col md={6}>
-                            <Checkbox
-                                checkboxClass={this.getCheckboxClass()}
-                                increaseArea="-10%"
-                                label="Checkbox"
-                            />
-                            <br/>
-                            <Checkbox
-                                checkboxClass={this.getCheckboxClass()}
-                                increaseArea="-10%"
-                                label="Checkbox, defaultChecked"
-                                defaultChecked
-                            />
-                            <br/>
-                            <Checkbox
-                                checkboxClass={this.getCheckboxClass()}
-                                increaseArea="-10%"
-                                label="Checkbox, disabled"
-                                disabled
-                            />
-                            <br/>
-                            <Checkbox
-                                checkboxClass={this.getCheckboxClass()}
-                                increaseArea="-10%"
-                                label="Checkbox, defaultChecked disabled"
-                                defaultChecked
-                                disabled
-                            />
-                        </Col>
-                        <Col md={6}>
-                            <Radio
-                                radioClass={this.getRadioClass()}
-                                increaseArea="-10%"
-                                label="Radio"
-                            />
-                            <br/>
-                            <Radio
-                                radioClass={this.getRadioClass()}
-                                increaseArea="-10%"
-                                label="Radio, defaultChecked"
-                                defaultChecked
-                            />
-                            <br/>
-                            <Radio
-                                radioClass={this.getRadioClass()}
-                                increaseArea="-10%"
-                                label="Radio, disabled"
-                                disabled
-                            />
-                            <br/>
-                            <Radio
-                                radioClass={this.getRadioClass()}
-                                increaseArea="-10%"
-                                label="Radio, defaultChecked disabled"
-                                defaultChecked
-                                disabled
-                            />
-                        </Col>
-                    </Row>
+                    <PanelBody>
+                        <Row>
+                            <Col md={6}>
+                                <Checkbox
+                                    checkboxClass={this.getCheckboxClass()}
+                                    increaseArea="-10%"
+                                    label="Checkbox"
+                                />
+                                <br/>
+                                <Checkbox
+                                    checkboxClass={this.getCheckboxClass()}
+                                    increaseArea="-10%"
+                                    label="Checkbox, defaultChecked"
+                                    defaultChecked={true}
+                                />
+                                <br/>
+                                <Checkbox
+                                    checkboxClass={this.getCheckboxClass()}
+                                    increaseArea="-10%"
+                                    label="Checkbox, disabled"
+                                    disabled={true}
+                                />
+                                <br/>
+                                <Checkbox
+                                    checkboxClass={this.getCheckboxClass()}
+                                    increaseArea="-10%"
+                                    label="Checkbox, defaultChecked disabled"
+                                    defaultChecked={true}
+                                    disabled={true}
+                                />
+                            </Col>
+                            <Col md={6}>
+                                <Radio
+                                    radioClass={this.getRadioClass()}
+                                    increaseArea="-10%"
+                                    label="Radio"
+                                />
+                                <br/>
+                                <Radio
+                                    radioClass={this.getRadioClass()}
+                                    increaseArea="-10%"
+                                    label="Radio, defaultChecked"
+                                    defaultChecked={true}
+                                />
+                                <br/>
+                                <Radio
+                                    radioClass={this.getRadioClass()}
+                                    increaseArea="-10%"
+                                    label="Radio, disabled"
+                                    disabled={true}
+                                />
+                                <br/>
+                                <Radio
+                                    radioClass={this.getRadioClass()}
+                                    increaseArea="-10%"
+                                    label="Radio, defaultChecked disabled"
+                                    defaultChecked={true}
+                                    disabled={true}
+                                />
+                            </Col>
+                        </Row>
+                    </PanelBody>
                 </Panel>
-
             </div>
         );
     }

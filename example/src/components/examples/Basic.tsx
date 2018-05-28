@@ -1,43 +1,38 @@
 import './style.scss';
 
 import * as React from 'react';
-import { PageHeader } from 'react-bootstrap';
+import {PageHeader} from 'react-bootstrap';
 import Demo from './Demo';
-import SkinDemo from './SkinDemo';
+import FuturicoSkin from './FuturicoSkin';
 import LineSkin from './LineSkin';
 import PolarisSkin from './PolarisSkin';
-import FuturicoSkin from './FuturicoSkin';
+import SkinDemo from './SkinDemo';
 
 class Basic extends React.Component {
 
-  static propTypes = {};
+    public static defaultProps = {};
 
-  static defaultProps = {};
+    constructor(props: {}) {
+        super(props);
+        this.state = {};
+    }
 
-  constructor(props: {}) {
-    super(props);
-    this.state = {};
-  }
-
-  componentDidMount() {
-  }
-
-  render() {
-    return (
-      <div>
-        <PageHeader>Examples</PageHeader>
-        <Demo/>
-        <br/>
-        <SkinDemo title="Minimal skin" skin="minimal" color=""/>
-        <SkinDemo title="Square skin" skin="square" color="green"/>
-        <SkinDemo title="Flat skin" skin="flat" color="red"/>
-        <LineSkin/>
-        <PolarisSkin/>
-        <FuturicoSkin/>
-        <br/>
-      </div>
-    );
-  }
+    public render() {
+        return (
+            <div>
+                <PageHeader>Examples</PageHeader>
+                <Demo/>
+                <br/>
+                <SkinDemo title="Minimal skin" skin="minimal" color=""/>
+                <SkinDemo title="Square skin" skin="square" color="green"/>
+                <SkinDemo title="Flat skin" skin="flat" color="red"/>
+                <LineSkin/>
+                <PolarisSkin/>
+                <FuturicoSkin/>
+                <br/>
+            </div>
+        );
+    }
 }
 
 export default Basic;

@@ -490,7 +490,7 @@ class EnhancedSwitch extends React.Component<IEnhancedSwitchProps, IEnhancedSwit
         const insertType = typeof props.insert
 
         const insertElement = (props.insert && insertType === "string" && !React.isValidElement(props.insert)) ?
-            (<div dangerouslySetInnerHTML={{__html: props.insert as string}}/>) : props.insert
+            (<div dangerouslySetInnerHTML={{__html: props.insert as string}}/>) : <div/>
 
         const inputContainer = (
             <div ref={this.inputContainerRef} {...wrapProps}>

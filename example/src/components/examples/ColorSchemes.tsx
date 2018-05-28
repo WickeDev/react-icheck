@@ -11,7 +11,7 @@ interface IColorSchemesState {
 
 class ColorSchemes extends React.Component<IColorSchemesProps, IColorSchemesState> {
 
-    static defaultProps = {
+    public static defaultProps = {
         color: '',
     };
 
@@ -22,18 +22,18 @@ class ColorSchemes extends React.Component<IColorSchemesProps, IColorSchemesStat
         };
     }
 
-    componentWillReceiveProps(nextProps: IColorSchemesProps) {
+    public componentWillReceiveProps(nextProps: IColorSchemesProps) {
         this.setState({color: nextProps.color});
     }
 
-    handleColor(color: string) {
+    public handleColor(color: string) {
         this.setState({color});
         if (this.props.onChange) {
             this.props.onChange(color);
         }
     }
 
-    render() {
+    public render() {
         const colors = 'Black Red Green Blue Aero Grey Orange Yellow Pink Purple'.split(' ');
 
         const lis = colors.map(color => {
